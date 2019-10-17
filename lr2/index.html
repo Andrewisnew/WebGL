@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="utf-8" />
+ <title>3D Graphics</title>
+ </head>
+
+ <body onload="main()">
+ <div>
+ 	<table>
+ 	<tr> 
+ 		<th></th>
+ 		<th>Rotation:</th>
+ 		<th>Translate:</th>
+ 		<th>Scale:</th>
+ 	</tr>
+ 	<tr> 
+ 		<td>X:</td>
+ 		<td><input id ="xRotation" type="range" min="-180" max="180" step="1" value="0" oninput="onXRotation()" /></td>
+ 		<td><input id ="xTranslation" type="range" min="-1" max="1" step="0.1" value="0" oninput="onXTranslation()" /></td>
+ 		<td><input id ="xScale" type="range" min="0" max="2" step="0.1" value="1" oninput="onXScale()" /></td>
+ 	</tr>
+ 	<tr> 
+ 		<td>Y:</td>
+ 		<td><input id ="yRotation" type="range" min="-180" max="180" step="1" value="0" oninput="onYRotation()" /></td>
+ 		<td><input id ="yTranslation" type="range" min="-1" max="1" step="0.1" value="0" oninput="onYTranslation()" /></td>
+ 		<td><input id ="yScale" type="range" min="0" max="2" step="0.1" value="1" oninput="onYScale()" /></td>
+ 	</tr>
+ 	<tr> 
+ 		<td>Z:</td>
+ 		<td><input id ="zRotation" type="range" min="-180" max="180" step="1" value="0" oninput="onZRotation()" /></td>
+ 		<td><input id ="zTranslation" type="range" min="-1" max="1" step="0.1" value="0" oninput="onZTranslation()" /></td>
+ 		<td><input id ="zScale" type="range" min="0" max="2" step="0.1" value="1" oninput="onZScale()" /></td>
+ 	</tr>
+ 	</table>
+
+</div>
+ <canvas id="webgl" width="800" height="800">
+ Please use the browser supporting "canvas"
+ </canvas>
+
+ <script src="webgl-utils.js"></script>
+ <script src="webgl-debug.js"></script>
+ <script src="cuon-utils.js"></script>
+  <script src="cuon-matrix.js"></script>
+ <script src="script.js"></script>
+ </body>
+ </html>
