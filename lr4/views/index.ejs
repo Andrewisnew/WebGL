@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="utf-8" />
+ <title>3D Graphics</title>
+ </head>
+
+ <body onload="main()">
+ <div>
+  <table>
+  <tr> 
+    <th>Look:</th>
+  </tr>
+  <tr> 
+    
+    <td><input id ="lrEye" type="range" min="-180" max="180" step="1" value="0" oninput="onLREye()" /></td>
+  </tr>
+  <tr> 
+    
+    <td><input id ="udEye" type="range" min="-180" max="180" step="1" value="0" oninput="onUDEye()" /></td>
+  </tr>
+
+
+  </table>
+
+</div>
+ <canvas id="webgl" width="800" height="800">
+ Please use the browser supporting "canvas"
+ </canvas>
+
+ <script src="public/js/webgl-utils.js"></script>
+ <script src="public/js/webgl-debug.js"></script>
+ <script src="public/js/cuon-utils.js"></script>
+  <script src="public/js/cuon-matrix.js"></script>
+     <script src="public/js/script.js"></script>
+
+ </body>
+ </html>
